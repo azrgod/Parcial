@@ -4,7 +4,6 @@
        xmlns:local="clr-namespace:Parcial.Views"
        Title="Parcial"
        x:Class="Parcial.AppShell">
-
     <!--
         The overall app visual hierarchy is defined here, along with navigation.
     
@@ -13,6 +12,7 @@
 
     <Shell.Resources>
         <ResourceDictionary>
+
             <Style x:Key="BaseStyle" TargetType="Element">
                 <Setter Property="Shell.BackgroundColor" Value="{StaticResource Primary}" />
                 <Setter Property="Shell.ForegroundColor" Value="White" />
@@ -30,9 +30,11 @@
     </Shell.Resources>
 
     <TabBar>
-        <ShellContent Title="About" Icon="icon_about.png" Route="AboutPage" ContentTemplate="{DataTemplate local:AboutPage}" />
-        <ShellContent Title="Browse" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:ItemsPage}" />
+        <ShellContent Title="Menu" Icon="icon_about.png" Route="AboutPage" ContentTemplate="{DataTemplate local:AboutPage}" />
+        <ShellContent Title="Registrarse" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:ItemsPage}" />
         <ShellContent Title="Login" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:LoginPage}" />
+        <ShellContent Title="Subscribirse al newsfeed de la compañia" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:ItemDetailPage}" />
+        <ShellContent Title="Registro de carro por tiempo indefinido" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:NewItemPage}" />
     </TabBar>
 
     <!--

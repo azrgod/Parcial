@@ -5,10 +5,9 @@
              Title="{Binding Title}">
 
     <StackLayout Spacing="20" Padding="15">
-        <Label Text="Text:" FontSize="Medium" />
-        <Label Text="{Binding Text}" FontSize="Small"/>
-        <Label Text="Description:" FontSize="Medium" />
-        <Label Text="{Binding Description}" FontSize="Small"/>
+        <Label Text="Ingresa tu correo aquí para saber las noticias mas recientes de la empresa" FontSize="16" Padding="0,0,0,0"/>
+        <Entry Placeholder="Correo Electronico" PlaceholderColor="White" TextColor="White"/>
+        <Button Text="Iniciar Secion" BackgroundColor="Red" BorderWidth="0.1" TextColor="Azure" CornerRadius="17" Clicked="NavigateButton_OnClicked"/>
     </StackLayout>
     
 </ContentPage>

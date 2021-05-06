@@ -7,15 +7,34 @@
              xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
              ios:Page.UseSafeArea="true">
     <ContentPage.Content>
-        <StackLayout Spacing="3" Padding="15">
-            <Label Text="Text" FontSize="Medium" />
-            <Entry Text="{Binding Text, Mode=TwoWay}" FontSize="Medium" />
-            <Label Text="Description" FontSize="Medium" />
-            <Editor Text="{Binding Description, Mode=TwoWay}" AutoSize="TextChanges" FontSize="Medium" Margin="0" />
-            <StackLayout Orientation="Horizontal">
-                <Button Text="Cancel" Command="{Binding CancelCommand}" HorizontalOptions="FillAndExpand"></Button>
-                <Button Text="Save" Command="{Binding SaveCommand}" HorizontalOptions="FillAndExpand"></Button>
-            </StackLayout>
+        <StackLayout Spacing="3" Padding="15" x:Name="Parcial">
+            <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+                <Label Text="Bienvenidos a Registros carros del milenio" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            </Frame>
+            <Label Text="Registre su carro" FontSize="Title" HorizontalOptions="Center" VerticalOptions="Center"/>
+            <Entry x:Name="Conductor"
+                       Placeholder="Nombre de Conducto"
+                    VerticalOptions="Center"
+                       HorizontalOptions="Center"
+                       />
+
+            <Entry x:Name="Marca"
+                       Placeholder="Marca"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"
+                   />
+
+            <Entry x:Name="Modelo"
+                       Placeholder="Modelo"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"
+                   />
+            <Button x:Name="buttonGuardar"
+                    Text="Guardar Registro"
+                        Clicked="buttonGuardar_Clicked"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                    BackgroundColor="Red"/>
         </StackLayout>
     </ContentPage.Content>
     

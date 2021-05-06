@@ -1,6 +1,7 @@
 ﻿using Parcial.ViewModels;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,11 +17,14 @@ namespace Parcial.Views
         {
             InitializeComponent();
             this.BindingContext = new LoginViewModel();
+
         }
+
         private async void NavigateButton_OnClicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new AboutPage());
         }
+
         private async void NavigatedButton_OnClicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new ItemsPage());

@@ -11,5 +11,9 @@ namespace Parcial.Views
             InitializeComponent();
             BindingContext = new ItemDetailViewModel();
         }
+        private async void NavigateButton_OnClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new AboutPage());
+        }
     }
 }
