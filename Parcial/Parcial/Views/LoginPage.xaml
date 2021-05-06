@@ -24,7 +24,7 @@
                         <Button Text="Iniciar Secion" BackgroundColor="Red" BorderWidth="0.1" TextColor="Azure" CornerRadius="17"/>
                         <StackLayout Orientation="Horizontal">
                             <Label Text="¿Recuperar contraseña?" TextColor="White" FontAttributes="Bold"/>
-                            <Label Text="Resgistrarse" HorizontalOptions="EndAndExpand" FontAttributes="Bold" TextColor="White"/>
+                            <Button Text="Registrarse" HorizontalOptions="EndAndExpand" FontAttributes="Bold" TextColor="White" Clicked="NavigatedButton_OnClicked" ></Button>
                         </StackLayout>
                         <Button Text="Regresar a Menu" BackgroundColor="blue" BorderWidth="0.1" TextColor="White" WidthRequest="100" HeightRequest="100" Clicked="NavigateButton_OnClicked"></Button>
                     </StackLayout>

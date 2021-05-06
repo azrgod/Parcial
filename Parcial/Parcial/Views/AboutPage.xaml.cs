@@ -15,5 +15,9 @@ namespace Parcial.Views
         {
             await Navigation.PushAsync(new LoginPage());
         }
+        private async void NavigatedButton_OnClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ItemsPage());
+        }
     }
 }
