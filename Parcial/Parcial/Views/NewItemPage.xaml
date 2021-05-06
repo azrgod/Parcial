@@ -8,6 +8,7 @@
              ios:Page.UseSafeArea="true">
     <ContentPage.Content>
         <StackLayout Spacing="3" Padding="15" x:Name="Parcial">
+
             <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
                 <Label Text="Bienvenidos a Registros carros del milenio" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
             </Frame>

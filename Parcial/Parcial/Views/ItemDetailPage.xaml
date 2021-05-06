@@ -6,8 +6,8 @@
 
     <StackLayout Spacing="20" Padding="15">
         <Label Text="Ingresa tu correo aquí para saber las noticias mas recientes de la empresa" FontSize="16" Padding="0,0,0,0"/>
-        <Entry Placeholder="Correo Electronico" PlaceholderColor="White" TextColor="White"/>
-        <Button Text="Iniciar Secion" BackgroundColor="Red" BorderWidth="0.1" TextColor="Azure" CornerRadius="17" Clicked="NavigateButton_OnClicked"/>
+            <Entry Placeholder="Correo Electronico" PlaceholderColor="White" TextColor="White"/>
+            <Button Text="Aceptar" BackgroundColor="Red" BorderWidth="0.1" TextColor="Azure" CornerRadius="17" Clicked="NavigateButton_OnClicked"/>
     </StackLayout>
     
 </ContentPage>
